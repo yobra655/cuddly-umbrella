@@ -19,7 +19,7 @@ app.post('/audit', async (req, res) => {
 
     try {
         // const Queue = await import('p-queue');
-        const lighthouseReports = await main_3(urls);
+        const lighthouseReports = await main_4(urls);
         console.log(lighthouseReports)
         res.json( lighthouseReports );
     } catch (error) {
